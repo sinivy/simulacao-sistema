@@ -89,7 +89,7 @@ projeto/
 │   ├── revisao.js
 │   └── nota.js
 │
-├── login.html
+├── index.html
 ├── dashboard.html
 ├── importar.html
 ├── dados.html
