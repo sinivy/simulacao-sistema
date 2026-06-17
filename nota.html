@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal</title>
+        <div class="logo-area">
+
+        <img
+            src="assets/logo.png"
+            alt="Logo"
+            class="logo"
+        >
+
+        <h2>Automação Fiscal Inteligente</h2>
+
+    </div>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>Nota Fiscal Eletrônica</h2>
+</header>
+
+<main class="container">
+
+    <div class="card nota-fiscal">
+
+        <div class="card nota-fiscal">
+
+    <div class="nfe-container">
+
+        <div class="nfe-header">
+            <div class="nfe-logo">
+            <img
+            src="assets/logo.png"
+            alt="Logo"
+            >
+        </div>
+
+            <h1>NOTA FISCAL ELETRÔNICA</h1>
+
+            <p>Número: 000001</p>
+
+            <p>Data: <span id="dataAtual"></span></p>
+
+        </div>
+
+        <div class="nfe-grid">
+
+            <div class="nfe-box">
+
+                <h3>Emitente</h3>
+
+                <p>Empresa Demonstração LTDA</p>
+
+                <p>CNPJ: 12.345.678/0001-99</p>
+
+            </div>
+
+            <div class="nfe-box">
+
+                <h3>Destinatário</h3>
+
+                <p>Cliente Demonstração</p>
+
+                <p>CNPJ: 00.000.000/0001-00</p>
+
+            </div>
+
+        </div>
+
+        <div class="nfe-grid">
+
+            <div class="nfe-box">
+
+                <h3>Quantidade de Itens</h3>
+
+                <p id="quantidadeItens"></p>
+
+            </div>
+
+            <div class="nfe-box">
+
+                <h3>Série</h3>
+
+                <p>001</p>
+
+            </div>
+
+        </div>
+
+        <div class="nfe-total">
+
+            Total:
+            <span id="valorTotal"></span>
+
+        </div>
+
+        <div class="nfe-footer">
+
+            DOCUMENTO GERADO PARA DEMONSTRAÇÃO
+
+            <br>
+
+            SEM VALIDADE FISCAL
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <button onclick="baixarPDF()">
+        📥 Baixar PDF
+    </button>
+
+    <button onclick="novaEmissao()">
+        🔄 Nova Emissão
+    </button>
+
+    <button onclick="encerrar()">
+        🚪 Encerrar
+    </button>
+    </div>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/nota.js"></script>
+
+</body>
+</html>

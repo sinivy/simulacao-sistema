@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importar Planilha</title>
+        <div class="logo-area">
+
+        <img
+            src="assets/logo.png"
+            alt="Logo"
+            class="logo"
+        >
+
+        <h2>Automação Fiscal Inteligente</h2>
+
+    </div>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h2>Importação de Planilha</h2>
+</header>
+
+<main class="container">
+<p id="status">
+    Aguardando importação...
+</p>
+<br>
+    <div class="card">
+
+        <h3>Selecione o arquivo Excel</h3>
+
+        <input
+            type="file"
+            id="arquivoExcel"
+            accept=".xlsx,.xls"
+        >
+
+        <br><br>
+
+        <button id="btnImportar">
+            Carregar Planilha
+        </button>
+
+        <p id="status"></p>
+
+    </div>
+    <div class="progress">
+    <div id="barra"></div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="js/excel.js"></script>
+</body>
+</html>
